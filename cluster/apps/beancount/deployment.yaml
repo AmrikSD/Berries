@@ -32,6 +32,6 @@ spec:
             - mountPath: /bean
               name: beancount-data-storage
       volumes:
-        - name: beancount-gravity-storage
+        - name: beancount-data-storage
           persistentVolumeClaim:
             claimName: beancount-data-claim
