@@ -3,6 +3,10 @@
   tags:
     - locale
 
+- include: netfilter.yml
+  tags:
+    - netfilter
+
 - include: packages.yml
   tags:
     - packages
