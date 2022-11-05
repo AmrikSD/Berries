@@ -19,6 +19,9 @@ spec:
       containers:
         - name: beancount
           image: yegle/fava:v1.23
+          env:
+            - name: BEANCOUNT_FILE
+              value: /bean/jp.fucks
           ports:
             - name: web
               containerPort: 5000
