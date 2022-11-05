@@ -1,3 +1,4 @@
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -17,17 +18,10 @@ spec:
     spec:
       containers:
         - name: beancount
-          image: yegle/fava:v1.23
+          image: hub.docker.com/yegle/fava:v1.23
           ports:
             - name: web
               containerPort: 5000
-          resources:
-            requests:
-              memory: "64Mi"
-              cpu: "250m"
-            limits:
-              memory: "128Mi"
-              cpu: "500m"
           volumeMounts:
             - mountPath: /bean
               name: beancount-data-storage
