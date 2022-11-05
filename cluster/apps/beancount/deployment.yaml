@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: beancount
-          image: hub.docker.com/yegle/fava:v1.23
+          image: yegle/fava:v1.23
           ports:
             - name: web
               containerPort: 5000
