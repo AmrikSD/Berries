@@ -32,6 +32,7 @@ spec:
         matchNames:
           - default
           - networking
+          - beancount
       name: "you"
       customApps:
         - name: Some External Cluster Service
