@@ -6,4 +6,5 @@ resources:
   - kube-system
   - networking
   - beancount
+  - homeassistant
   # - system-upgrade
