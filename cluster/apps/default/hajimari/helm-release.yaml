@@ -33,6 +33,7 @@ spec:
           - default
           - networking
           - beancount
+          - homeassistant
       name: "you"
       customApps:
         - name: Some External Cluster Service
