@@ -2,10 +2,10 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: beancount-data-claim
-  namespace: beancount
+  name: homeassistant-config-claim
+  namespace: homeassistant
   labels:
-    app: beancount
+    app: homeassistant
   annotations:
     volume.beta.kubernetes.io/storage-class: "freenas-nfs-csi"
 spec:
