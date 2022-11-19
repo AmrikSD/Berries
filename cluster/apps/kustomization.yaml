@@ -7,4 +7,5 @@ resources:
   - networking
   - beancount
   - homeassistant
+  - media
   # - system-upgrade
