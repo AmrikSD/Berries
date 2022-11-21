@@ -23,9 +23,9 @@ spec:
             - name: TZ
               value: Europe/London
             - name: PUID
-              value: "1000"
+              value: "0"
             - name: PGID
-              value: "1000"
+              value: "0"
           ports:
             - name: web
               containerPort: 8989
