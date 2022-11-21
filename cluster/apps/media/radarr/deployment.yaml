@@ -40,5 +40,5 @@ spec:
             claimName: radarr-config-claim
         - name: movies-nfs
           nfs:
-            path: 10.2.1.2
-            server: /mnt/pool_01/Downloads
+            server: 10.2.1.2
+            path: /mnt/pool_01/Downloads
