@@ -1,0 +1,46 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: wireguard-deployment
+  namespace: wireguard
+  labels:
+    app: wireguard
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: wireguard
+  template:
+    metadata:
+      labels:
+        app: wireguard
+    spec:
+      containers:
+        - name: wireguard
+          image: ghcr.io/linuxserver/wireguard:latest
+          securityContext:
+            capabilities:
+              add:
+                - NET_ADMIN
+                - SYS_MODULE
+          env:
+            - name: TZ
+              value: Europe/London
+            - name: PUID
+              value: "1000"
+            - name: PGID
+              value: "1000"
+            - name: PEERS
+              value: "1"
+          ports:
+            - name: udp
+              containerPort: 51820
+              protocol: UDP
+          volumeMounts:
+            - mountPath: /config
+              name: wireguard-config-storage
+      volumes:
+        - name: wireguard-config-storage
+          persistentVolumeClaim:
+            claimName: wireguard-config-claim

@@ -8,4 +8,5 @@ resources:
   - beancount
   - homeassistant
   - media
+  - wireguard
   # - system-upgrade
