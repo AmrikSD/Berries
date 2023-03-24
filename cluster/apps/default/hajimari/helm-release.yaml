@@ -34,20 +34,12 @@ spec:
           - networking
           - beancount
           - homeassistant
+          - media
       name: "you"
       customApps:
         - name: Plex
           url: http://10.3.10.2:32400/web
           icon: mdi:plex
-        - name: Radarr
-          url: http://10.3.10.4:7878/
-          icon: https://radarr.video/img/logo.png
-        - name: Sonarr
-          url: http://10.3.10.5:8989/
-          icon: https://sonarr.tv/img/logo.png
-        - name: Jackett
-          url: http://10.3.10.1:9117
-          icon: icon-park:men-jacket
       groups:
         - name: Communicate
           links:
