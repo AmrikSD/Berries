@@ -3,7 +3,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: beancount-ingress
-  namespace: beancount
+  namespace: default
   annotations:
     cert-manager.io/cluster-issuer: "letsencrypt-production"
     hajimari.io/enable: "true"
@@ -24,4 +24,4 @@ spec:
               service:
                 name: beancount-svc
                 port:
-                  number: 80
+                  name: beancount-web

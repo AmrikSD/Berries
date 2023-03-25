@@ -3,7 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: beancount-deployment
-  namespace: beancount
+  namespace: default
   labels:
     app: beancount
 spec:
