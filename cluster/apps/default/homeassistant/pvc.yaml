@@ -3,7 +3,7 @@ apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: homeassistant-config-claim
-  namespace: homeassistant
+  namespace: default
   labels:
     app: homeassistant
   annotations:

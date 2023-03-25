@@ -5,6 +5,5 @@ resources:
   - default
   - kube-system
   - networking
-  - homeassistant
   - media
   # - system-upgrade
