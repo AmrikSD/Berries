@@ -11,6 +11,7 @@ metadata:
     hajimari.io/enable: "true"
     hajimari.io/icon: "weather-sunset"
     traefik.ingress.kubernetes.io/router.entrypoints: "websecure"
+    kubernetes.io/ingress.class: "traefik"
 spec:
   tls:
     - hosts:
