@@ -6,3 +6,5 @@ resources:
   - deployment.yaml
   - service.yaml
   - ingress.yaml
+  - fava-policy.yaml
+  - fava-registry.yaml
