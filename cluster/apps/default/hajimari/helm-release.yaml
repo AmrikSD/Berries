@@ -1,4 +1,3 @@
----
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
@@ -25,7 +24,7 @@ spec:
   values:
     image:
       repository: ghcr.io/toboshii/hajimari # {"$imagepolicy": "flux-system:hajimari:name"}
-      tag: v0.2.0 # {"$imagepolicy": "flux-system:hajimari:tag"}
+      tag: v0.3.1 # {"$imagepolicy": "flux-system:hajimari:tag"}
     hajimari:
       defaultEnable: false
       namespaceSelector:
