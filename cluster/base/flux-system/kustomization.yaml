@@ -5,6 +5,7 @@ resources:
   - gotk-components.yaml
   - gotk-sync.yaml
   - hajimari-registry.yaml
+  - flux-system-automation.yaml
   - charts
 patchesStrategicMerge:
   - ./gotk-patches.yaml
