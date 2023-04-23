@@ -4,3 +4,5 @@ kind: Kustomization
 resources:
   - config-pvc.yaml
   - helm-release.yaml
+  - hajimari-registry.yaml
+  - hajimari-policy.yaml
