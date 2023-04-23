@@ -4,6 +4,7 @@ kind: Kustomization
 resources:
   - gotk-components.yaml
   - gotk-sync.yaml
+  - hajimari-registry.yaml
   - charts
 patchesStrategicMerge:
   - ./gotk-patches.yaml
