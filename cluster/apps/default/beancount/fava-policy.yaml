@@ -7,6 +7,9 @@ metadata:
 spec:
   imageRepositoryRef:
     name: fava
+  filterTags:
+    pattern: '^v1\.(?P<mv>[0-9]{2})'
+    extract: '$mv'
   policy:
-    semver:
-      range: "v1.x.x"
+    numerical:
+      order: asc
