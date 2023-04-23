@@ -18,5 +18,5 @@ jobs:
         pr_title: "Pulling ${{ github.ref }} into main"
         pr_body: "👑 *An automated PR*"
         pr_reviewer: "AmrikSD"
-        pr_draft: true
+        pr_draft: false
         github_token: ${{ secrets.GITHUB_TOKEN }}
