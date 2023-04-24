@@ -1,4 +1,3 @@
----
 name: Image Bump Auto-PR
 on:
   push:
@@ -19,11 +18,7 @@ jobs:
         with:
           destination_branch: "main"
           pr_title: "Pulling ${{ github.ref }} into main"
-          pr_body: |
-            👑 *An automated PR*
-            ```
-            ${{ github.event.pull_request.commits_url }}
-            ```
+          pr_body: "👑 *An automated PR* "
           pr_reviewer: "AmrikSD"
           pr_draft: false
           github_token: ${{ secrets.GITHUB_TOKEN }}
