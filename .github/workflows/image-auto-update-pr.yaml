@@ -1,6 +1,8 @@
 ---
 name: Image Bump Auto-PR
 on:
+  push:
+    branches: ['image-updates']
   create:
     branches: ['image-updates']
 
