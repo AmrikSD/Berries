@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: jackett
-          image: ghcr.io/linuxserver/jackett:0.20.4151 # { "$imagepolicy": "flux-system:jackett"}
+          image: ghcr.io/linuxserver/jackett:0.20.4152 # { "$imagepolicy": "flux-system:jackett"}
           env:
             - name: TZ
               value: Europe/London
