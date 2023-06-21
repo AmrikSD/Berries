@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: overseerr
-          image: ghcr.io/linuxserver/overseerr:1.32.5 # { "$imagepolicy": "flux-system:overseerr"}
+          image: ghcr.io/linuxserver/overseerr:1.33.0 # { "$imagepolicy": "flux-system:overseerr"}
           env:
             - name: TZ
               value: Europe/London
