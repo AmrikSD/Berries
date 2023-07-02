@@ -1,0 +1,28 @@
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: grafana-ingress
+  namespace: monitoring
+  annotations:
+    cert-manager.io/cluster-issuer: "letsencrypt-production"
+    hajimari.io/enable: "true"
+    hajimari.io/icon: "weather-sunset"
+    traefik.ingress.kubernetes.io/router.entrypoints: "websecure"
+    kubernetes.io/ingress.class: "traefik"
+spec:
+  tls:
+    - hosts:
+        - "grafana.${SECRET_DOMAIN}"
+      secretName: "grafana.${SECRET_DOMAIN}"
+  rules:
+    - host: "grafana.${SECRET_DOMAIN}"
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: release-name-grafana
+                port:
+                  number: 80
