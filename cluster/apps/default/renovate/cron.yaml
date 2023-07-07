@@ -30,4 +30,6 @@ spec:
                   value: "Renovate Bot <bot@renovateapp.com>"
                 - name: RENOVATE_PLATFORM
                   value: "github"
+                - name: RENOVATE_TOKEN
+                  value: "${SECRET_RENOVATE_PAT}"
           restartPolicy: Never
