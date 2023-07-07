@@ -6,3 +6,4 @@ resources:
   - hajimari
   - beancount
   - homeassistant
+  - renovate
