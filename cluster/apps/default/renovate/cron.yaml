@@ -15,7 +15,7 @@ spec:
             - name: renovate
               # Update this to the latest available and then enable Renovate on
               # the manifest
-              image: renovate/renovate:36.5.2
+              image: renovate/renovate:36.4-full
               args:
                 - AmrikSD/Berries
               # Environment Variables
