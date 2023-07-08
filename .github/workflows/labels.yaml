@@ -1,0 +1,18 @@
+name: Mergable
+
+on:
+  pull_request:
+    types:
+      - opened
+      - labeled
+      - unlabeled
+
+jobs:
+  fail-for-dont-merge-label:
+    if: contains(github.event.pull_request.labels.*.name, 'DONT MERGE')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fail if PR is a draft
+        run: |
+          echo "This PR is currently a draft."
+          exit 1
