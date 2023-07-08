@@ -2,7 +2,7 @@
 apiVersion: batch/v1
 kind: CronJob
 metadata:
-  name: renovate
+  name: renovate-pogo
   namespace: default
 spec:
   schedule: '@hourly'
