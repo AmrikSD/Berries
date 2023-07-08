@@ -8,11 +8,11 @@ on:
       - unlabeled
 
 jobs:
-  fail-for-dont-merge-label:
+  label:
     if: contains(github.event.pull_request.labels.*.name, 'DONT MERGE')
     runs-on: ubuntu-latest
     steps:
-      - name: Fail if PR is a draft
+      - name: Fail if PR is has don't merge label
         run: |
-          echo "This PR is currently a draft."
+          echo "This PR has a don't merge label"
           exit 1
