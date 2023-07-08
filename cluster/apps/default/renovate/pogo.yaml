@@ -31,5 +31,5 @@ spec:
                 - name: RENOVATE_PLATFORM
                   value: "github"
                 - name: RENOVATE_TOKEN
-                  value: "${SECRET_RENOVATE_PAT}"
+                  value: "${SECRET_RENOVATE_POTATOBLOOD_PAT}"
           restartPolicy: Never
