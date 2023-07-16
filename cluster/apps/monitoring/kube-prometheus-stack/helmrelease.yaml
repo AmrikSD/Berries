@@ -58,6 +58,8 @@ spec:
                   storage: 1Gi
     grafana:
       enabled: true
+      adminUser: ${SECRET_GF_USER}
+      adminPassword: ${SECRET_GF_PASS}
 
     kube-state-metrics:
       metricLabelsAllowlist:
