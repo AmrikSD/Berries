@@ -2,7 +2,7 @@
 
 These are the containers used in the cluster, a ticked [x] image means it's been pulled into ghcr.io/AmrikSD/image
 
-- [ ] docker.io/busybox:1.32.0
+- [x] docker.io/busybox:1.32.0
 - [ ] docker.io/calico/kube-controllers:v3.22.5
 - [ ] docker.io/calico/node:v3.22.5
 - [ ] docker.io/calico/typha:v3.22.5
@@ -31,16 +31,16 @@ These are the containers used in the cluster, a ticked [x] image means it's been
 - [ ] k8s.gcr.io/sig-storage/csi-provisioner:v3.1.0
 - [ ] k8s.gcr.io/sig-storage/csi-resizer:v1.4.0
 - [ ] k8s.gcr.io/sig-storage/csi-snapshotter:v5.0.1
-- [ ] quay.io/jetstack/cert-manager-cainjector:v1.12.2
-- [ ] quay.io/jetstack/cert-manager-controller:v1.12.2
-- [ ] quay.io/jetstack/cert-manager-webhook:v1.12.2
+- [x] quay.io/jetstack/cert-manager-cainjector:v1.12.2
+- [x] quay.io/jetstack/cert-manager-controller:v1.12.2
+- [x] quay.io/jetstack/cert-manager-webhook:v1.12.2
 - [ ] quay.io/kiwigrid/k8s-sidecar:1.24.6
-- [ ] quay.io/metallb/controller:v0.12.1
+- [x] quay.io/metallb/controller:v0.12.1
 - [ ] quay.io/metallb/speaker:v0.12.1
 - [ ] quay.io/oriedge/k8s_gateway:v0.3.4
 - [ ] quay.io/prometheus-operator/prometheus-config-reloader:v0.66.0
 - [ ] quay.io/prometheus-operator/prometheus-operator:v0.66.0
-- [ ] quay.io/prometheus/alertmanager:v0.25.0
+- [x] quay.io/prometheus/alertmanager:v0.25.0
 - [ ] quay.io/prometheus/node-exporter:v1.6.0
 - [ ] quay.io/prometheus/prometheus:v2.45.0
 - [ ] quay.io/tigera/operator:v1.25.13
