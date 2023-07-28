@@ -1,1 +1,1 @@
-FROM yegle/fava:v1.23
+FROM yegle/fava:v1.25
