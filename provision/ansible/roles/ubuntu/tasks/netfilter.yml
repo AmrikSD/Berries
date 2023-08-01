@@ -1,4 +1,0 @@
-- name: Ensure br_netfilter is enabled.
-  modprobe:
-    name: br_netfilter
-    state: present
