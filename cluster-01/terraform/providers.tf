@@ -9,6 +9,10 @@ terraform {
             source = "carlpett/sops"
             version = "~> 0.7.2"
         }
+        talos = {
+            source = "siderolabs/talos"
+            version = "~> 0.2.0"
+        }
     }
 }
 
@@ -25,3 +29,4 @@ provider "proxmox" {
     password = data.sops_file.proxmox-secret.data["proxmox.password"]
 }
 
+provider "talos" {}
