@@ -1,1 +1,1 @@
-FROM docker.io/democraticcsi/csi-grpc-proxy:v0.4.2
+FROM docker.io/democraticcsi/csi-grpc-proxy:v0.5.3
