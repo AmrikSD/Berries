@@ -2,7 +2,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: sonarr-ingress
+  name: sonarr
   namespace: media
   annotations:
     cert-manager.io/cluster-issuer: "letsencrypt-production"
