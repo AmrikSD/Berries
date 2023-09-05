@@ -24,7 +24,7 @@ metadata:
   annotations:
     cert-manager.io/cluster-issuer: "letsencrypt-production"
     hajimari.io/enable: "true"
-    hajimari.io/icon: "weather-sunset"
+    hajimari.io/icon: "simple-icons:truenas"
     external-dns/is-public: "true"
     traefik.ingress.kubernetes.io/router.entrypoints: "websecure"
     kubernetes.io/ingress.class: "traefik"
