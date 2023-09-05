@@ -6,5 +6,3 @@ resources:
   - deployment.yaml
   - service.yaml
   - ingress.yaml
-  - overseerr-policy.yaml
-  - overseerr-registry.yaml
