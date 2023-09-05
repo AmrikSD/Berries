@@ -6,8 +6,10 @@ metadata:
   namespace: media
   annotations:
     cert-manager.io/cluster-issuer: "letsencrypt-production"
+    external-dns.alpha.kubernetes.io/target: "ipv4.${SECRET_DOMAIN}"
+    external-dns/is-public: "true"
     hajimari.io/enable: "true"
-    hajimari.io/icon: "weather-sunset"
+    hajimari.io/icon: "mdi:television-box"
     traefik.ingress.kubernetes.io/router.entrypoints: "websecure"
     kubernetes.io/ingress.class: "traefik"
 spec:
