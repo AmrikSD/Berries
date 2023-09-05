@@ -1,19 +1,46 @@
-apiVersion: discovery.k8s.io/v1
-kind: EndpointSlice
+---
+# https://kubernetes.io/docs/concepts/services-networking/service/
+apiVersion: v1
+kind: Service
 metadata:
   name: truenas
   namespace: media
-  labels:
-    # You should set the "kubernetes.io/service-name" label.
-    # Set its value to match the name of the Service
-    kubernetes.io/service-name: truenas
-addressType: IPv4
-ports:
-  - name: '' # empty because port 9376 is not assigned as a well-known
-    appProtocol: http
-    protocol: TCP
-    port: 80
-endpoints:
-  - addresses:
-      - "10.2.1.2"
-      - "10.2.1.4"
+spec:
+  selector:
+    app: truenas
+  type: ExternalName
+  ports:
+    - name: truenas
+      protocol: TCP
+      port: 80
+      targetPort: 80
+  externalName: 10.2.1.2
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: nas
+  namespace: media
+  annotations:
+    cert-manager.io/cluster-issuer: "letsencrypt-production"
+    hajimari.io/enable: "true"
+    hajimari.io/icon: "weather-sunset"
+    external-dns/is-public: "true"
+    traefik.ingress.kubernetes.io/router.entrypoints: "websecure"
+    kubernetes.io/ingress.class: "traefik"
+spec:
+  tls:
+    - hosts:
+        - "nas.${SECRET_DOMAIN}"
+      secretName: "nas.${SECRET_DOMAIN}"
+  rules:
+    - host: "nas.${SECRET_DOMAIN}"
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: truenas
+                port:
+                  number: 80
