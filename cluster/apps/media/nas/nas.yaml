@@ -1,0 +1,19 @@
+apiVersion: discovery.k8s.io/v1
+kind: EndpointSlice
+metadata:
+  name: truenas
+  namespace: media
+  labels:
+    # You should set the "kubernetes.io/service-name" label.
+    # Set its value to match the name of the Service
+    kubernetes.io/service-name: truenas
+addressType: IPv4
+ports:
+  - name: '' # empty because port 9376 is not assigned as a well-known
+    appProtocol: http
+    protocol: TCP
+    port: 80
+endpoints:
+  - addresses:
+      - "10.2.1.2"
+      - "10.2.1.4"
