@@ -1,1 +1,1 @@
-FROM quay.io/metallb/controller:v0.13.10
+FROM quay.io/metallb/controller:v0.13.11
