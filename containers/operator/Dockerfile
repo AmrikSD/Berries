@@ -1,1 +1,1 @@
-FROM quay.io/tigera/operator:v1.30.5
+FROM quay.io/tigera/operator:v1.31.1
