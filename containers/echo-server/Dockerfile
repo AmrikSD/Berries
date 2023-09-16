@@ -1,1 +1,1 @@
-FROM docker.io/ealen/echo-server:0.7.1
+FROM docker.io/ealen/echo-server:0.8.0
