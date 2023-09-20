@@ -23,6 +23,8 @@ If you're stumbled upon this somehow looking for inspiration for your own home l
 
 Amrik.de and Amrik.co.uk are two of my websites, they're both statically generated and hosted in some kind of object store, more details below in their specific sections.
 
+I prmoise I'm not a narcissist, I owned amrik.de before .co.uk was available, and they're a great thing to talk about in interview often times.
+
 ### 💩 Amrik.co.uk 
 
 [Amrik.co.uk](https://github.com/AmrikSD/amrik.co.uk/) is my personal blog, it's currently under construction but the plan is to host it similarly to amrik.de, as static html/css/js. I want to experiment with using more IaC for this website so I will aim to have everything in code using Terraform (or OpenTofu :joy:). I also want to experiment with using R2 and cloudflare rather than only aws products.
