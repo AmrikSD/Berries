@@ -1,6 +1,6 @@
 [submodule "amrik.co.uk"]
-	path = amrik.co.uk
+	path = website/amrik.co.uk
 	url = git@github.com:AmrikSD/amrik.co.uk.git
 [submodule "Amrik.de"]
-	path = Amrik.de
+	path = website/Amrik.de
 	url = git@github.com:AmrikSD/Amrik.de.git
