@@ -1,6 +1,10 @@
 cloudflare:
     email: ENC[AES256_GCM,data:Xijfyub3zK9UXCIcMjx+hd7C,iv:UDQ2SyMilVYS5FGd7zZJcnQXyUwHOeWMErlmA5q53jg=,tag:+JWup8Gq97qsQQUJCZPHhg==,type:str]
-    apikey: ENC[AES256_GCM,data:GrGcLER8RFd0Ksl6IGuGrV0OSGRY1hYe5LE8ZaJ6rIx0ZrUbRQ==,iv:3dJ9s1ijjLlrtaf5m+wqUjBzTxoexmPeBRc55frrYOg=,tag:Ul9Yptj4lXNP+BR9wbO7Ow==,type:str]
+    api_key: ENC[AES256_GCM,data:rin7solh9AHsTHq6i4PolyjRM/lviqe9Z2Bv+b4U6Qbg3e9akdqUng==,iv:etMvsXV43RpQs76skyeYhjouQxXKvvV1mY3DN9bz3e8=,tag:WWmIQmK7GnIRKkdnLB3yDA==,type:str]
+    account_id: ENC[AES256_GCM,data:xLXBYz4bcCOjQf48S9srJAagpefEgCzCBinLH+WV8Tg=,iv:Z0sxCG2KgnoR8DrLnEhbnNkIN+F04M64PnTEfvl4Rcs=,tag:ClhhFmYEgP9y8YtW14PHaA==,type:str]
+    amrik.co.uk:
+        zone_id: ENC[AES256_GCM,data:nkuBz6ce2Z2XDw1mkN/OSXKj7woiNqNVhLzIwMxndMM=,iv:XCiVJfZkTRMGfI8m3A8tyBZ9u4dRKzufkpN/ovxB33k=,tag:fVZvui04XhahyAXotr0MeQ==,type:str]
+        ip: ENC[AES256_GCM,data:2+zAyjDzS+kJUnumug==,iv:6ntiyuZhYuZkKk08Qo60Q17KNhVH1jAPHxMSG8j+KVE=,tag:8GseWE/GXZRXKVadfAhdmg==,type:str]
 sops:
     kms: []
     gcp_kms: []
@@ -16,8 +20,8 @@ sops:
             SkVJam9kQTRkSlFhS0pZZnpEK25HTlEKWIB90KHn2BvVL4mz74qERMa9HDa2lao5
             8xQjdUeivXtpyEyHoEfnQmTBprCiupxhJnFMZfOrWIaz2GM10XVyAQ==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2023-09-21T20:35:39Z"
-    mac: ENC[AES256_GCM,data:sSkLBXo0RqKjqPdyT8b4FB72rbc2SRbktZHhvte+c+jZIbArf8MKZ3RJxqwJHqq0UsuUpbRlcJUVntL4I2g+fV69HagWE5AlmA8d1wYDTdrRX8N7NMV4FK9ahNoq74VeBLxywaOvKPRN5KAAviOR8DBpUZbwDAk0Iou8XPme9ZE=,iv:vYvnh1/m5M5MLUCTIDuS3voRblHnAV6T9XQsx9SReYs=,tag:5ymcvSZBpa5i4TSA1B5b8w==,type:str]
+    lastmodified: "2023-09-21T21:23:07Z"
+    mac: ENC[AES256_GCM,data:ZZ1Wb0mTnyB3bTilumhHaJ7syFBiduhuVa20DcRxIyo17ibkTzzF0yPw7a8tSuQ0U/YNixJqfJEl1V8UYrPeW7FEVrO8U1/2I42qIN73u0igr3s6l2pUIpcxnnxudk3QNR6d0uZxwSE1S9gAKAZDD52VCoxlO8KMzN7cIx8sZ+0=,iv:KkCBSctTDqXESKK3eYGpZNwT/EeM56m3OW8QQyYbfbQ=,tag:quFL0s7mzWUCQG+NT8dObQ==,type:str]
     pgp: []
     unencrypted_suffix: _unencrypted
     version: 3.7.3
