@@ -1,3 +1,3 @@
 module "cloudflare" {
-    source = "./cloudflare/"
+  source = "./cloudflare/"
 }
