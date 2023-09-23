@@ -1,1 +1,1 @@
-FROM renovate/renovate:36.100-full
+FROM renovate/renovate:36.105-full
