@@ -23,8 +23,8 @@ spec:
       retries: 3
   values:
     image:
-      repository: ghcr.io/toboshii/hajimari # {"$imagepolicy": "flux-system:hajimari:name"}
-      tag: v0.3.1 # {"$imagepolicy": "flux-system:hajimari:tag"}
+      repository: ghcr.io/toboshii/hajimari
+      tag: v0.3.1
     hajimari:
       defaultEnable: false
       namespaceSelector:
