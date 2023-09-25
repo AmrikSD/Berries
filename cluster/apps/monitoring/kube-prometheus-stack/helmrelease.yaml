@@ -121,10 +121,10 @@ spec:
         tls:
           - hosts:
               - *host
-      prometheusSpec:
-        additionalScrapeConfigs:
-          - job_name: 'minecraft'
-            static_configs:
-              - targets: ['10.2.157.54:9225']
-                labels:
-                  server_name: 'my-awesome-server'
+      # prometheusSpec:
+        # additionalScrapeConfigs:
+        #   - job_name: 'minecraft'
+        #     static_configs:
+        #       - targets: ['10.2.157.54:9225']
+        #         labels:
+        #           server_name: 'my-awesome-server'
