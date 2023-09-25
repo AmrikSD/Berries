@@ -31,8 +31,7 @@ spec:
         matchNames:
           - default
           - networking
-          - beancount
-          - homeassistant
+          - monitoring
           - media
       name: "you"
       customApps:
