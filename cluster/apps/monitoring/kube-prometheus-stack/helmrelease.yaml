@@ -122,4 +122,5 @@ spec:
           - hosts:
               - *host
       prometheusSpec:
-        ruleNamespaceSelector: {}
+        ruleNamespaceSelector:
+          any: true
