@@ -4,7 +4,7 @@ apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
   name: kube-prometheus-stack
-  namespace: monitoring
+  namespace: default
 spec:
   interval: 30m
   timeout: 15m
@@ -121,16 +121,3 @@ spec:
         tls:
           - hosts:
               - *host
-      prometheusSpec:
-        podMonitorNamespaceSelector:
-          any: true
-        podMonitorSelector: {}
-        podMonitorSelectorNilUsesHelmValues: false
-        ruleNamespaceSelector:
-          any: true
-        ruleSelector: {}
-        ruleSelectorNilUsesHelmValues: false
-        serviceMonitorNamespaceSelector:
-          any: true
-        serviceMonitorSelector: {}
-        serviceMonitorSelectorNilUsesHelmValues: false
