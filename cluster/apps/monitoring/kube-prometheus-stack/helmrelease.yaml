@@ -121,3 +121,5 @@ spec:
         tls:
           - hosts:
               - *host
+      prometheusSpec:
+        ruleNamespaceSelector: {}
