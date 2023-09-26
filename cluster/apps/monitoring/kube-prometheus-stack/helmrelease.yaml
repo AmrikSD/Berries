@@ -122,5 +122,5 @@ spec:
           - hosts:
               - *host
       prometheusSpec:
-        ruleNamespaceSelector:
+        podMonitorNamespaceSelector:
           any: true
