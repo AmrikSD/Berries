@@ -145,10 +145,3 @@ spec:
         serviceMonitorNamespaceSelector: {}
         podMonitorSelector: {}
         podMonitorNamespaceSelector: {}
-        storageSpec:
-          volumeClaimTemplate:
-            spec:
-              storageClassName: freenas-nfs-csi
-              resources:
-                requests:
-                  storage: 10Gi
