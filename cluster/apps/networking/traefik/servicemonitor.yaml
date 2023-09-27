@@ -13,7 +13,6 @@ spec:
   namespaceSelector:
     matchNames:
       - networking
-      - prometheus
   selector:
     matchLabels:
-      operated-prometheus: "true"
+      app.kubernetes.io/name: traefik
