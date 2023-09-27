@@ -122,5 +122,33 @@ spec:
           - hosts:
               - *host
       prometheusSpec:
-        podMonitorNamespaceSelector:
-          any: true
+        replicas: 1
+        replicaExternalLabelName: "__replica__"
+        scrapeInterval: 30s
+        podAntiAffinity: hard
+        ruleSelectorNilUsesHelmValues: false
+        serviceMonitorSelectorNilUsesHelmValues: false
+        podMonitorSelectorNilUsesHelmValues: false
+        probeSelectorNilUsesHelmValues: false
+        scrapeConfigSelectorNilUsesHelmValues: false
+        enableAdminAPI: true
+        walCompression: true
+        enabledFeatures:
+          - auto-gomaxprocs
+          - memory-snapshot-on-shutdown
+          - new-service-discovery-manager
+        retention: 2d
+        retentionSize: 6GB
+        ruleSelector: {}
+        ruleNamespaceSelector: {}
+        serviceMonitorSelector: {}
+        serviceMonitorNamespaceSelector: {}
+        podMonitorSelector: {}
+        podMonitorNamespaceSelector: {}
+        storageSpec:
+          volumeClaimTemplate:
+            spec:
+              storageClassName: freenas-nfs-csi
+              resources:
+                requests:
+                  storage: 10Gi
