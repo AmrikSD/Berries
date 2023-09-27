@@ -13,6 +13,7 @@ spec:
   namespaceSelector:
     matchNames:
       - networking
+      - default
   selector:
     matchLabels:
       app.kubernetes.io/name: traefik
