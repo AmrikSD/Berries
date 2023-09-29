@@ -40,7 +40,7 @@ spec:
             - containerPort: 9109
               name: graphite-udp
               protocol: UDP
-            - containerPort: 9108
+            - containerPort: 9091
               name: prometheus
               protocol: TCP
           volumeMounts:
