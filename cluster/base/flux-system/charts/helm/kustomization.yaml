@@ -5,6 +5,7 @@ resources:
   - bitnami-charts.yaml
   - deliveryhero-charts.yaml
   - descheduler-charts.yaml
+  - democratic-csi-charts.yaml
   - ealenn-charts.yaml
   - emberstack-charts.yaml
   - external-dns-charts.yaml
@@ -24,4 +25,3 @@ resources:
   - rook-ceph-charts.yaml
   - stakater-charts.yaml
   - traefik-charts.yaml
-  - weaveworks-kured-charts.yaml
