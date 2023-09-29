@@ -9,7 +9,7 @@ spec:
   chart:
     spec:
       chart: democratic-csi
-      version: v1.8.3
+      version: 0.14.1
       sourceRef:
         kind: HelmRepository
         name: democratic-csi
