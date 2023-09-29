@@ -6,9 +6,10 @@ metadata:
   name: promscrape
   namespace: monitoring
 spec:
-  endpoints:
+  jobLabel: "test"
+  podMetricsEndpoints:
     - interval: 30s
-      targetPort: 9091
+      port: prometheus
       path: /metrics
   namespaceSelector:
     matchNames:
