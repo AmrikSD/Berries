@@ -48,7 +48,7 @@ spec:
         detachedSnapshots: "true"
     driver:
       config:
-        driver: freenas-api-nfs
+        driver: freenas-nfs
         instance_id:
         httpConnection:
           protocol: http
@@ -57,6 +57,16 @@ spec:
           apiKey: $SECRET_TRUENAS_API_KEY
           allowInsecure: true
         zfs:
+          cli:
+            sudoEnabled: true
+            paths:
+              zfs: /usr/local/sbin/zfs
+              zpool: /usr/local/sbin/zpool
+              sudo: /usr/local/sbin/sudo
+              chroot: /usr/local/sbin/chroot
+
+          datasetProperties:
+            "org.freenas:description": "{{ parameters.[csi.storage.k8s.io/pvc/namespace] }}/{{ parameters.[csi.storage.k8s.io/pvc/name] }}"
           datasetParentName: pool_01/k8s/n/v
           # detachedSnapshotsDatasetParentName: pool_01/k8s/nfs/s
           datasetEnableQuotas: true
@@ -65,11 +75,11 @@ spec:
           datasetPermissionsUser: 0
           datasetPermissionsGroup: 0
         nfs:
-          shareHost: 1.2.1.2
+          shareHost: 10.2.1.2
           shareAlldirs: false
           shareAllowedHosts: []
           shareAllowedNetworks: []
           shareMaprootUser: root
-          shareMaprootGroup: root
+          shareMaprootGroup: wheel
           shareMapallUser: ""
           shareMapallGroup: ""
