@@ -6,4 +6,3 @@ resources:
   - metallb-system.yaml
   - networking.yaml
   - system-upgrade.yaml
-  - storage-manager.yaml
