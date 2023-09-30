@@ -3,7 +3,7 @@ apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
   name: truenas-nfs
-  namespace: kube-system
+  namespace: democratic-csi
 spec:
   interval: 5m
   chart:
@@ -86,7 +86,7 @@ spec:
     # https://kubernetes-csi.github.io/docs/csi-driver-object.html
     csiDriver:
       # should be globally unique for a given cluster
-      name: "org.democratic-csi.truenas.nfs"
+      name: "org.democratic-csi.nfs"
       version: 1.5.0
       # create the kubernetes CSIDriver
       enabled: true
