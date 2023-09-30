@@ -66,9 +66,10 @@ spec:
           shareMaprootUser: root
         sshConnection:
           host: 10.2.1.2
-          password: $SECRET_TRUENAS_PASS
+            #password: $SECRET_TRUENAS_PASS
           port: 22
           username: $SECRET_TRUENAS_USER
+          privateKey: $SECRET_TRUENAS_SSH_KEY
         zfs:
           cli:
             sudoEnabled: true
