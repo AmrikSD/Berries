@@ -40,7 +40,7 @@ spec:
     driver:
       config:
         driver: freenas-nfs
-      existingConfigSecret: nfs-zfs
+      existingConfigSecret: dcsi-nfs-secret
 
     # https://kubernetes-csi.github.io/docs/csi-driver-object.html
     csiDriver:
