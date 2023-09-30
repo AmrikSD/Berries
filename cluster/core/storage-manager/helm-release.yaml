@@ -48,10 +48,10 @@ spec:
         httpConnection:
           allowInsecure: true
           host: 10.2.1.2
-          password: "${SECRET_TRUENAS_PASS}"
+          password: $SECRET_TRUENAS_PASS
           port: 80
           protocol: http
-          username: "${SECRET_TRUENAS_USER}"
+          username: $SECRET_TRUENAS_USER
         instance_id:
         nfs:
           shareAlldirs: false
@@ -67,9 +67,9 @@ spec:
         sshConnection:
           host: 10.2.1.2
           port: 22
-          username: "${SECRET_TRUENAS_USER}"
+          username: $SECRET_TRUENAS_USER
             #password: "$SECRET_TRUENAS_PASS"
-          privateKey: "${SECRET_TRUENAS_SSH_KEY}"
+          privateKey: $SECRET_TRUENAS_SSH
         zfs:
           cli:
             sudoEnabled: true
