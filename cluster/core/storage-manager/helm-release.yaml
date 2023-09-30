@@ -324,19 +324,22 @@ spec:
       affinity: {}
 
     # add note here about volume expansion requirements
-    storageClasses: []
-    #- name:
-    #  annotations: {}
-    #  labels: {}
-    #  defaultClass: false
-    #  reclaimPolicy: Delete
-    #  volumeBindingMode: Immediate
-    #  allowVolumeExpansion: true
-    #  parameters:
-    #    # for block-based storage can be ext3, ext4, xfs
-    #    # for nfs should be nfs
-    #    fsType:
-    #  mountOptions: []
+    storageClasses:
+      - name: zfs-nfs
+        defaultClass: false
+        reclaimPolicy: Delete
+        volumeBindingMode: Immediate
+        allowVolumeExpansion: true
+        parameters:
+          fsType: nfs
+        mountOptions:
+          - nfsvers=4.2
+          - nconnect=8
+          - hard
+        annotations: {}
+        labels: {}
+        # for block-based storage can be ext3, ext4, xfs
+        # for nfs should be nfs
     #  secrets:
     #    provisioner-secret:
     #    controller-publish-secret:
