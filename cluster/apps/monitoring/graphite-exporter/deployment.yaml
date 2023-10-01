@@ -47,7 +47,7 @@ spec:
             - mountPath: /tmp
               name: config-volume
       volumes:
-      - name: config-volume
-        configMap:
-          defaultMode: 420
-          name: truenas-graphite-exporter
+        - name: config-volume
+          configMap:
+            defaultMode: 420
+            name: truenas-graphite-exporter
