@@ -20,19 +20,19 @@ spec:
         - name: prometheus
           image: prom/prometheus:v2.47.0
           args:
-            - --config.file=/etc/config/prometheus.yml
+            - --config.file=/etc/prometheus/prometheus.yml
             - --storage.tsdb.path=/data
           ports:
             - name: web
               containerPort: 9090
           volumeMounts:
             - name: config-volume
-              mountPath: /etc/config
+              mountPath: /etc/prometheus
             - mountPath: /data
               name: prometheus-data-volume
       volumes:
         - name: config-volume
-          configmap:
+          configMap:
             name: prometheus-conf
         - name: prometheus-data-volume
           persistentVolumeClaim:
