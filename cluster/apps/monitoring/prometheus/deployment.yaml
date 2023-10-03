@@ -1,0 +1,40 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: prometheus-deployment
+  namespace: default
+  labels:
+    app: prometheus
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: prometheus
+  template:
+    metadata:
+      labels:
+        app: prometheus
+    spec:
+      containers:
+        - name: prometheus
+          image: prom/prometheus:v2.47.0
+          args:
+            - --config.file=/etc/prometheus/prometheus.hml
+            - --storage.tsdb=/prometheus/
+          ports:
+            - name: web
+              containerPort: 9090
+          volumeMounts:
+            - mountPath: /etc/prometheus/
+              name: prometheus-config-volume
+            - mountPath: /prometheus/
+              name: prometheus-data-storage
+      volumes:
+        - name: prometheus-config-volume
+          configmap:
+            defaultMode: 420
+            name: prometheus-conf
+        - name: prometheus-data-volume
+          persistentVolumeClaim:
+            claimName: prometheus-data-claim
