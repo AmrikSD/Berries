@@ -61,12 +61,12 @@ spec:
         parameters:
           fsType: nfs
         mountOptions:
-         - nfsvers=4
-         - nconnect=8
-         - hard
-         - intr
-         - noatime
-         - nodiratime
+          - nfsvers=4
+          - nconnect=8
+          - hard
+          - intr
+          - noatime
+          - nodiratime
         annotations: {}
         labels: {}
         secrets:
