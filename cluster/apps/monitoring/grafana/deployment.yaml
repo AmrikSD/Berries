@@ -26,11 +26,14 @@ spec:
       containers:
         - name: grafana
           image: grafana/grafana:10.1.4
+          env:
+            - name: GF_INSTALL_PLUGINS
+              value: "grafana-clock-panel"
           ports:
             - name: web
               containerPort: 3000
           volumeMounts:
-            - mountPath: /data
+            - mountPath: /var/lib/grafana
               name: grafana-data-volume
       volumes:
         - name: grafana-data-volume
