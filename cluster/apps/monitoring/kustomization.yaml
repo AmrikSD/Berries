@@ -5,5 +5,5 @@ resources:
   - ./namespace.yaml
   - ./prometheus
   - ./grafana
-  - ./kube-prometheus-stack
+#  - ./kube-prometheus-stack
   - ./graphite-exporter
