@@ -4,5 +4,6 @@ kind: Kustomization
 resources:
   - ./namespace.yaml
   - ./prometheus
+  - ./grafana
   - ./kube-prometheus-stack
   - ./graphite-exporter
