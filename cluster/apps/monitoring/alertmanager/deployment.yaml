@@ -38,7 +38,7 @@ spec:
       serviceAccountName: alertmanager
       containers:
         - name: alertmanager
-          image: prom/alertmanager:v2.47.1
+          image: prom/alertmanager:0.26.0
           args:
             - --config.file=/etc/alertmanager/alertmanager.yml
           ports:
