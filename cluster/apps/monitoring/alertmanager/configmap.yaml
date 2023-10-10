@@ -9,7 +9,7 @@ metadata:
 data:
   alertmanager.yml: |-
     route:
-      group_by: ['alertname', 'job']
+      group_by: ['name', 'job']
       group_wait: 30s
       group_interval: 5m
       repeat_interval: 3h
