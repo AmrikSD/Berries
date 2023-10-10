@@ -28,4 +28,4 @@ spec:
               service:
                 name: alertmanager
                 port:
-                  name: alertmanager-web
+                  name: am-web

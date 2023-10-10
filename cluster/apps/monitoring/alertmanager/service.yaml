@@ -10,7 +10,7 @@ spec:
   selector:
     app: alertmanager
   ports:
-    - name: alertmanager-web
+    - name: am-web
       protocol: TCP
       port: 80
       targetPort: web
