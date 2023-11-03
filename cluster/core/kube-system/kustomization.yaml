@@ -4,4 +4,3 @@ kind: Kustomization
 resources:
   - kube-vip
   - system-upgrade-controller.yaml
-  - system-upgrade.yaml
