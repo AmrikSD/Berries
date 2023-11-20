@@ -4,3 +4,4 @@ kind: Kustomization
 resources:
   - berries.yaml
   - pogo.yaml
+  - gitlab.yaml
