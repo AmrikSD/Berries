@@ -7,7 +7,7 @@ metadata:
   labels:
     app: radarr
   annotations:
-    volume.beta.kubernetes.io/storage-class: "freenas-nfs-csi"
+    volume.beta.kubernetes.io/storage-class: "zfs-nfs"
 spec:
   storageClassName: freenas-nfs-csi
   accessModes:
