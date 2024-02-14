@@ -3,7 +3,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: steel-pod
-  namspace: default
+  namespace: default
 spec:
   containers:
     - name: steel-container
