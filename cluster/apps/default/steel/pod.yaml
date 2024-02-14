@@ -1,0 +1,11 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: steel-pod
+spec:
+  containers:
+    - name: steel-container
+      image: ghcr.io/potato-blood/steel:latest
+      imagePullSecrets:
+        - name: steel
