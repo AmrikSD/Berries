@@ -7,6 +7,6 @@ metadata:
 spec:
   containers:
     - name: steel-container
-      image: ghcr.io/potato-blood/steel:latest
-      imagePullSecrets:
-        - name: steel
+      image: ghcr.io/potato-blood/steel
+  imagePullSecrets:
+    - name: steel
