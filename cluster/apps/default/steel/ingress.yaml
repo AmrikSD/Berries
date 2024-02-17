@@ -25,4 +25,4 @@ spec:
               service:
                 name: steel
                 port:
-                  name: steel
+                  name: web
