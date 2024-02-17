@@ -8,3 +8,4 @@ resources:
   - homeassistant
   - renovate
   - postgres
+  - steel

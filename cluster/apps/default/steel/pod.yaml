@@ -8,5 +8,15 @@ spec:
   containers:
     - name: steel-container
       image: ghcr.io/potato-blood/steel
+      env:
+        - name: STEEL_POSTGRES_HOST
+          value: postgres
+        - name: STEEL_POSTGRES_DB
+          value: postgres
+        - name: STEEL_POSTGRES_USER
+          value: "${SECRET_POSTGRES_USER}"
+        - name: STEEL_POSTGRES_PASS
+          value: "${SECRET_POSTGRES_PASS}"
+      imagePullPolicy: Always
   imagePullSecrets:
     - name: steel
