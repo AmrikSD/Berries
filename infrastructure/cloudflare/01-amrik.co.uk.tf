@@ -1,7 +1,7 @@
 resource "cloudflare_r2_bucket" "amrik-co-uk" {
   account_id = data.sops_file.cloudflare-secret.data["cloudflare.account_id"]
-  name = "amrik-co-uk"
-  location = "WEUR"
+  name       = "amrik-co-uk"
+  location   = "WEUR"
 }
 
 resource "cloudflare_ruleset" "transform_url_rewrite" {
@@ -20,8 +20,8 @@ resource "cloudflare_ruleset" "transform_url_rewrite" {
         }
       }
     }
-    expression = "((http.host eq \"amrik.co.uk\" or http.host eq \"www.amrik.co.uk\" ) and http.request.uri.path eq \"/\")"
+    expression  = "((http.host eq \"amrik.co.uk\" or http.host eq \"www.amrik.co.uk\" ) and http.request.uri.path eq \"/\")"
     description = "Rewrite / to index.html"
-    enabled = true
+    enabled     = true
   }
 }
