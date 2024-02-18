@@ -1,4 +1,5 @@
 proxmox:
+    endpoint: ENC[AES256_GCM,data:IRotUMoiG+f9W1W4Y+nhkDzy5VRD,iv:AR2dojKMpYnvIyDmlj44k1n1pay8DDult7yWgDOMCN8=,tag:k6QdVLGDhRNGK/wXNxymFg==,type:str]
     username: ENC[AES256_GCM,data:zZymEm9pP1Q=,iv:sI0eyq/SeV7A2+xTL+zkbghN9awu1SYPZtAyzxCZNu8=,tag:RTa09UNUj0JeR/ZX4uojVA==,type:str]
     password: ENC[AES256_GCM,data:cmyLvpQZKtQVPVIl,iv:/sb4Xjo3ZYY9oDcnbzmoi9mzrJzsULMzYGtL5ozL1Gs=,tag:Ycz9P/aBze05lWWrzoGH7Q==,type:str]
 sops:
@@ -16,8 +17,8 @@ sops:
             ZU5XaDhTcGwzcXFjaCtNVWVKMVhNRnMKLoTeX9PX8ebObHfbPt7w9w1SUjgGJucH
             c7c29iqOODtlN1KzHgtAVyuHf6v1FhxPCjqRlTY7sehYr+XA7QT5/w==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2023-08-03T20:40:15Z"
-    mac: ENC[AES256_GCM,data:GFpXC5NrYg2t6GJjlcZAhKsan5BbTHBNBWZPmXhCVswLP+X9az05l1clDefGE108a0rn2mIzcdnGXI1zxIisO5fhLMlWDVb8h5sYzfkV2trBdM47ppTlknHMoNcPWdMsTDLoCTK84SzlYWgSRxgrEee93cnP8yYgAMWww/ZZHYA=,iv:Rl82lD/Xzle/8/mA9236C35i/sFcG36UfnSySjlaZSg=,tag:WDFMQqH6Pj1oql/X3TkM/g==,type:str]
+    lastmodified: "2024-02-18T18:44:56Z"
+    mac: ENC[AES256_GCM,data:joqYhtYAUO4gGpKTZm5nBIbvdsrtiX7eqqZxt5g7zH5NbjZ3/opO1JGVrxsyL9wypCSIT2QS44z517cBrEH3oRRPj78skmJ/ajRqgAaPDgEDSqXKLfVuHZfU/U7AOMddaa3X/fsy27xrz2Puv0hDSm6D6Dud7cJ8y79MG7ZIPm4=,iv:AYscI1YoyjBPWRYKzr5LgKwtNwp7fkkFfe1Pr9tw9Ss=,tag:gsufRcwElvAQ4exC3X6d1A==,type:str]
     pgp: []
     unencrypted_suffix: _unencrypted
     version: 3.7.3

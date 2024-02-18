@@ -10,3 +10,7 @@ terraform {
 module "cloudflare" {
   source = "./cloudflare/"
 }
+
+module "proxmox" {
+  source = "./proxmox/"
+}
