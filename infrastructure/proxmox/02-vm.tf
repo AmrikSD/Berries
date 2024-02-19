@@ -1,10 +1,11 @@
-resource "proxmox_virtual_environment_vm" "talos_vm" {
+resource "proxmox_virtual_environment_vm" "talos_vm_k8s_master" {
+  node_name       = "proxmox"
+  count           = 1
+  stop_on_destroy = true
 
-  node_name = "proxmox"
-  count     = 1
-
-  name        = "talos-k8s-master"
+  name        = "talos-k8s-master-${count.index + 1}"
   description = "Managed By Terraform"
+  tags        = ["master", "talos", "terraform"]
 
   vm_id = 400 + count.index
 
@@ -35,8 +36,4 @@ resource "proxmox_virtual_environment_vm" "talos_vm" {
   tpm_state {
     version = "v2.0"
   }
-
-  stop_on_destroy = true
-
-
 }
