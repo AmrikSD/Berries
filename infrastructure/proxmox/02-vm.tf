@@ -36,4 +36,12 @@ resource "proxmox_virtual_environment_vm" "talos_vm_k8s_master" {
   tpm_state {
     version = "v2.0"
   }
+
+
+  lifecycle {
+    ignore_changes = [
+      description
+    ]
+  }
+
 }
