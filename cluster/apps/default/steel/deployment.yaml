@@ -19,6 +19,8 @@ spec:
         - name: steel
           image: ghcr.io/potato-blood/steel:latest
           env:
+            - name: STEEL_PORT
+              value: "8080"
             - name: STEEL_POSTGRES_HOST
               value: postgres
             - name: STEEL_POSTGRES_DB
