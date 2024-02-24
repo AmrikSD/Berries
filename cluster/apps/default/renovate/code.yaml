@@ -2,7 +2,7 @@
 apiVersion: batch/v1
 kind: CronJob
 metadata:
-  name: renovate-berries
+  name: renovate-code
   namespace: default
 spec:
   schedule: '@hourly'
