@@ -24,6 +24,7 @@ resource "proxmox_virtual_environment_vm" "talos_vm_k8s_master" {
   }
 
   cpu {
+    architecture = "x86_64"
     type  = "x86-64-v2-AES"
     cores = 2
   }
