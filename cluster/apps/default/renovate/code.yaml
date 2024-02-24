@@ -17,7 +17,7 @@ spec:
               # the manifest
               image: renovate/renovate:37.212-full
               args:
-                - AmrikSD/Berries
+                - AmrikSD/code
               # Environment Variables
               env:
                 - name: LOG_LEVEL
