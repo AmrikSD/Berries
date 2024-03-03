@@ -16,4 +16,4 @@ spec:
   externalTrafficPolicy: Local
   sessionAffinity: None
   type: LoadBalancer
-  loadBalancerIP: 10.3.50.50
+  loadBalancerIP: 10.3.100.50
