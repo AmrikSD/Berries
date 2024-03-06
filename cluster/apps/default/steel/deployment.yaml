@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: steel
-          image: ghcr.io/potato-blood/steel:v0.0.1
+          image: ghcr.io/potato-blood/steel:latest
           env:
             - name: STEEL_PORT
               value: "8080"
